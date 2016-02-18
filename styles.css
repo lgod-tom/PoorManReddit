@@ -4,6 +4,10 @@
 }
 .navbar a:hover {
   border-radius: 15%;
+  color: #000;
+}
+.test:visited {
+  border-radius: 15%;
 }
 li > a {
   color: #fff;
@@ -18,6 +22,27 @@ li > a {
 .jumbotron {
   padding-bottom: 10px;
   padding-top: 10px;
+  margin-bottom: 5px;
+}
+.container {
+  background-color: #ffffdc;
+}
+.thumbImg {
+  display: block;
+  padding: 1%;
+}
+h3 {
+  display: inline;
+}
+img {
+  padding-right: 0.5%;
+}
+.linkTitles {
+  color: #000;
+}
+.linkTitles:hover {
+  text-decoration: none;
+  color: #00ada7;
 }
 @media (max-width: 900px) {
   .nav-item {
@@ -31,5 +56,8 @@ li > a {
   }
   .navbar a:hover {
     border-radius: 0%;
+  }
+  h3 {
+    font-size: 14px;
   }
 }

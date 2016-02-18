@@ -14,13 +14,13 @@ $(function(){
     var imgDiv = $("<div class='thumbImg'></div>");
 
 
-       imgDiv.append([storyTitle, storyImage]);
+       imgDiv.append([storyImage, storyTitle]);
        $(".inner").append(imgDiv);
 
 
 
     var picUrl = somethingElse.data.children[i].data.url;
-    var titleLink = $("<a></a>").attr("href", picUrl);
+    var titleLink = $("<a class='linkTitles'></a>").attr("href", picUrl);
 
     $(storyTitle).wrap(titleLink);
 
