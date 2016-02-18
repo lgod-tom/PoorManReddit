@@ -11,8 +11,13 @@ $(function(){
     //console.log(somethingElse.data.children[i].data);
 
     var storyImage = $("<img />").attr("src", picThumb);
+    var imgDiv = $("<div class='thumbImg'></div>");
 
-        $('.inner').append([storyTitle, storyImage]);
+
+       imgDiv.append([storyTitle, storyImage]);
+       $(".inner").append(imgDiv);
+
+
 
     var picUrl = somethingElse.data.children[i].data.url;
     var titleLink = $("<a></a>").attr("href", picUrl);
