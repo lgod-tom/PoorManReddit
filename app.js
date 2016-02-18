@@ -12,11 +12,11 @@ $(function(){
 
     var storyImage = $("<img />").attr("src", picThumb);
 
-        $('div').append([storyTitle, storyImage]);
+        $('inner').append([storyTitle, storyImage]);
 
     var picUrl = somethingElse.data.children[i].data.url;
     var titleLink = $("<a></a>").attr("href", picUrl);
-    
+
     $(storyTitle).wrap(titleLink);
 
       }
