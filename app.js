@@ -5,13 +5,20 @@ $(function(){
 
     for(i=0; i<=9; i++){
     var title = somethingElse.data.children[i].data.title;
-    var dogStory = $("<h1></h1>").text(title);
+    var storyTitle = $("<h3></h3>").text(title);
 
-    var url = somethingElse.data.children[i].data.thumbnail;
-    console.log(somethingElse.data.children[i].data);
+    var picThumb = somethingElse.data.children[i].data.thumbnail;
+    //console.log(somethingElse.data.children[i].data);
 
-    var dogImage = $("<img />").attr("src", url);
-          $('div').append([dogStory, dogImage]);
+    var storyImage = $("<img />").attr("src", picThumb);
+
+        $('div').append([storyTitle, storyImage]);
+
+    var picUrl = somethingElse.data.children[i].data.url;
+    var titleLink = $("<a></a>").attr("href", picUrl);
+    
+    $(storyTitle).wrap(titleLink);
+
       }
   });
   
