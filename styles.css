@@ -2,12 +2,12 @@
   background-color: #de3961;
   margin-bottom: 0;
 }
-.navbar a:hover {
+.navbar a {
   border-radius: 15%;
-  color: #000;
-}
-li > a {
   color: #fff;
+}
+.navbar a:hover {
+  color: #000;
 }
 .jumbotron .redditTitle {
   font-size: 50px;
